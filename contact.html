@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Bhavatarini S — reach out for internship, research, or collaboration opportunities." />
+  <meta name="author" content="Bhavatarini S" />
+  <meta property="og:title" content="Contact | Bhavatarini S" />
+  <meta property="og:type" content="website" />
+  <title>Contact | Bhavatarini S</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Bhavatarini S — Home">BS</a>
+      <nav aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-labelledby="contact-heading" class="page-hero">
+      <div class="container">
+        <h1 id="contact-heading">Get in Touch</h1>
+        <p class="tagline">Open to internships, research roles, and collaborations.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="form-heading" class="content-section">
+      <div class="container contact-layout">
+
+        <!-- Contact Form -->
+        <div class="form-wrapper">
+          <h2 id="form-heading">Send a Message</h2>
+
+          <!-- 
+            WCAG 2.1 AA Form Notes:
+            - Every input has an explicit <label> with matching `for`/`id`
+            - Required fields use both `required` and `aria-required="true"`
+            - Error descriptions use `aria-describedby`
+            - fieldset + legend groups related fields
+            - Tab order follows visual order (no tabindex tricks needed)
+          -->
+          <form action="#" method="post" novalidate aria-label="Contact form">
+
+            <fieldset>
+              <legend>Your Details</legend>
+
+              <div class="field-group">
+                <label for="name">Full Name <span class="required-marker" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  aria-describedby="name-hint"
+                  placeholder="e.g. Priya Ramesh"
+                />
+                <span id="name-hint" class="field-hint">Enter your full name as you'd like to be addressed.</span>
+              </div>
+
+              <div class="field-group">
+                <label for="email">Email Address <span class="required-marker" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-hint"
+                  placeholder="you@example.com"
+                />
+                <span id="email-hint" class="field-hint">I'll reply to this address.</span>
+              </div>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Your Message</legend>
+
+              <div class="field-group">
+                <label for="subject">Subject <span class="required-marker" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  aria-required="true"
+                  placeholder="e.g. Internship Opportunity"
+                />
+              </div>
+
+              <div class="field-group">
+                <label for="message">Message <span class="required-marker" aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  aria-required="true"
+                  aria-describedby="message-hint"
+                  placeholder="Tell me what you have in mind…"
+                ></textarea>
+                <span id="message-hint" class="field-hint">Minimum 20 characters.</span>
+              </div>
+
+            </fieldset>
+
+            <p class="required-note"><span aria-hidden="true">*</span> Required fields</p>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <aside aria-label="Other ways to connect" class="contact-info">
+          <h2>Other Ways to Connect</h2>
+          <address>
+            <dl>
+              <div class="contact-detail">
+                <dt>Location</dt>
+                <dd>Coimbatore, Tamil Nadu, India</dd>
+              </div>
+              <div class="contact-detail">
+                <dt>College</dt>
+                <dd>SNS College of Technology</dd>
+              </div>
+            </dl>
+          </address>
+          <p class="availability-note">
+            Available for internships and project collaborations.
+            Response time: within 48 hours.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <time datetime="2025">2025</time> Bhavatarini S · Coimbatore, Tamil Nadu</p>
+      <nav aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
